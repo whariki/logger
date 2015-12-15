@@ -1,0 +1,22 @@
+{
+  "name": "logger",
+  "version": "0.0.0",
+  "description": "RESTful Logging Service",
+  "main": "logger.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whariki/logger"
+  },
+  "author": "Matthew Campbell",
+  "license": "GNU GPLv3",
+  "bugs": {
+    "url": "https://github.com/whariki/logger/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.3",
+    "mocha": "~2.3.4"
+  }
+}
