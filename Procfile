@@ -1,1 +1,1 @@
-web: node logger.js 
+web: node logger.js -p 80
