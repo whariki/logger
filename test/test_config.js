@@ -9,7 +9,7 @@ var sleep = require('sleep');
 var StringDecoder = require('string_decoder').StringDecoder;
 var decoder = new StringDecoder('utf8');
 
-var default_listen_host = '127.0.0.1';
+var default_listen_host = '0.0.0.0';
 var default_listen_port = '50000';
 
 context('Test Suite: config.js unit tests: ', function() {
