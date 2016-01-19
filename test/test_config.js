@@ -10,7 +10,7 @@ var StringDecoder = require('string_decoder').StringDecoder;
 var decoder = new StringDecoder('utf8');
 
 var default_listen_host = '0.0.0.0';
-var default_listen_port = '50000';
+var default_listen_port = process.env.PORT || '50000';
 
 context('Test Suite: config.js unit tests: ', function() {
 

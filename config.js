@@ -12,7 +12,7 @@ var os = require('os');
 // the defaults
 var options = {
     hostname:'0.0.0.0',
-    port:50000,
+    port:process.env.PORT || 50000,
     database:''
 };
 
