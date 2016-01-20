@@ -1,10 +1,21 @@
+var bodyParser = require('body-parser');
+
 module.exports = function(app) {
 
-    // logs req to console
+    // Adds time received to request
     app.use(function (req,res,next) {
         var d = new Date;
-        console.log(`${d.toISOString()} ${req.originalUrl} from ${req.ip}`);
         req.dateRecieved = d;
         next();
     });
+
+    // log request to console
+    app.use(function (req,res,next) {
+        console.log(`${req.dateRecieved.toISOString()} got request '${req.originalUrl}' from ${req.ip}`);
+        next();
+    });
+
+    app.use(bodyParser.urlencoded({
+        extended: true
+    }));
 }

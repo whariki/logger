@@ -10,10 +10,11 @@ var fs = require('fs');
 var os = require('os');
 
 // the defaults
+// the port environment variable is used for Heroku deploment
 var options = {
     hostname:'0.0.0.0',
     port:process.env.PORT || 50000,
-    database:''
+    database:'localhost:27017'
 };
 
 var configFile = './logger.config'
